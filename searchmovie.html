@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 검색 사이트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>영화 검색</h1>
+        <input id="searchbar" type="text" placeholder="영화를 검색하세요">
+        <div><button id="bookmark-index">내가 좋아요한 영화</button></div>
+    </div>
+
+    <div id="cards">
+    </div>
+
+    <div class="modal-bg hidden">
+        <div class="modal-btn-bg">
+            <div class="modal">
+            </div>
+            <button class="modal-btn">❌</button>
+            <button class="bookmark-btn non-colored">❤️</button>
+        </div>
+    </div>
+
+    <script type="module" src="root.js"></script>
+</body>
+
+</html>

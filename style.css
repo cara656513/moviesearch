@@ -1,0 +1,118 @@
+body {
+    margin: 0px;
+    background-color: gainsboro;
+}
+
+#header {
+    width: 100%;
+    background-color: rgb(160, 0, 0);
+    padding: 20px 0 20px 0;
+    color: white;
+
+    text-align: center;
+}
+
+#searchbar {
+    width: 500px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#bookmark-index {
+    border: 0;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#bookmark-index:hover {
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 200px;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+}
+
+.card-img img {
+    width: 200px;
+}
+
+.card-text {
+    padding: 0 10px 10px 10px;
+}
+
+.card-score {
+    color: gray;
+    font-size: 12px;
+}
+
+.modal-btn-bg {
+    position: relative;
+}
+
+.modal-btn {
+    position: absolute;
+    top: 2%;
+	left: 92%;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.bookmark-btn {
+    position: absolute;
+    top: 93%;
+	left: 88%;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.non-colored{
+    filter:grayscale(100%) brightness(150%);
+}
+
+.modal-bg {
+    background-color: rgba(0, 0, 0, 0.699);
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+}
+
+.modal {
+    background-color: rgb(255, 255, 255);
+    width: 570px;
+    height: 770px;
+    border-radius: 10px;
+    padding: 30px;
+    overflow: auto;
+}
+
+.hidden {
+    display: none;
+}
