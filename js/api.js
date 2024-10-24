@@ -1,5 +1,4 @@
 import { printOutCard, modalOpen, printOutModal } from "./ui.js";
-import { saveMovies,savedMovies } from "./localstorage.js";
 
 const options = {
     method: 'GET',
@@ -11,6 +10,11 @@ const options = {
 
 //로컬스토리지 변수할당
 let favoriteMovies = [];
+const MOVIES_KEY = "Movies";
+function saveMovies(movieData) {
+    localStorage.setItem(MOVIES_KEY, JSON.stringify(movieData));
+};
+const savedMovies = localStorage.getItem(MOVIES_KEY);
 
 const likeBtn = document.querySelector(".bookmark-btn");
 const NONCOLORED_CLASSNAME = "non-colored";
